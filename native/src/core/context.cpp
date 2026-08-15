@@ -36,6 +36,12 @@ Context::PreloadedDex::~PreloadedDex() {
 void Context::InitArtHooker(JNIEnv *env, const lsplant::InitInfo &initInfo) {
     if (!lsplant::Init(env, initInfo)) {
         LOGE("Failed to initialize LSPlant hooking framework.");
+        return;
+    }
+    if (lsplant::ArtSlotsArmed()) {
+        LOGI("LSPlant trampoline guards registered with ART SpecPosed slots (no Dobby on those ART functions).");
+    } else {
+        LOGW("ART SpecPosed slots missing; LSPlant is using inline hooks for trampoline guards.");
     }
 }
 
