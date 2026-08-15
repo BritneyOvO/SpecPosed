@@ -1,7 +1,7 @@
-id=zygisk_vector
-name=Vector
+id=zygisk_specposed
+name=SpecPosed
 version=${versionName} (${versionCode}-${versionHash})
 versionCode=${versionCode}
-author=JingMatrix
+author=BritneyOvO
 description=A modern, Xposed-compatible framework for Android application hooking. (Android 8.1 ~ 17)
-updateJson=https://raw.githubusercontent.com/JingMatrix/Vector/master/zygisk/update.json
+updateJson=https://raw.githubusercontent.com/BritneyOvO/SpecPosed/master/zygisk/update.json

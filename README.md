@@ -1,6 +1,6 @@
 <div align="center">
 
-# Vector Framework
+# SpecPosed
 
 **A high-performance ART hooking framework for modern Android**
 

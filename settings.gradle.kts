@@ -16,7 +16,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Vector"
+rootProject.name = "SpecPosed"
 
 include(
     ":daemon",
